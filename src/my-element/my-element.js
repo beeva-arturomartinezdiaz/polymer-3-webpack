@@ -1,4 +1,4 @@
-import {Element as PolymerElement} from '../node_modules/@polymer/polymer/polymer-element.js';
+import {Element as PolymerElement} from '../../node_modules/@polymer/polymer/polymer-element.js';
 
 export class MyElement extends PolymerElement {
   static get is() {
@@ -6,12 +6,7 @@ export class MyElement extends PolymerElement {
   }
 
   static get template() {
-    return `<style>
-              :host {
-                display: block;
-              }
-            </style>
-            <p>It works! I am "${this.is}"</p>`;
+    return `##dom_replace##`;
   }
 
   static get properties() {
