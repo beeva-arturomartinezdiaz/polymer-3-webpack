@@ -10,12 +10,8 @@ export class MyElement extends PolymerElement {
               :host {
                 display: block;
               }
-              p {
-                text-decoration: underline;
-                color: red;
-              }
             </style>
-            <p>It works!</p>`;
+            <p>It works! I am "${this.is}"</p>`;
   }
 
   static get properties() {

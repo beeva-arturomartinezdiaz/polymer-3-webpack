@@ -1,4 +1,5 @@
 import {Element as PolymerElement} from '../node_modules/@polymer/polymer/polymer-element.js';
+import {PaperButton} from '../node_modules/@polymer/paper-button/paper-button.js';
 import {MyElement} from './my-element.js';
 
 export class MyApp extends PolymerElement {
@@ -8,7 +9,8 @@ export class MyApp extends PolymerElement {
 
   static get template() {
     return `<h1>Welcome [[name]]!</h1>
-            <my-element></my-element>`;
+            <my-element></my-element>
+            <paper-button on-click="_alertName">Which is my name?</paper-button>`;
   }
 
   static get properties() {
@@ -18,6 +20,10 @@ export class MyApp extends PolymerElement {
         value: ''
       }
     }
+  }
+
+  _alertName(e) {
+    console.log(`Your name is: ${this.name}`);
   }
 }
 
