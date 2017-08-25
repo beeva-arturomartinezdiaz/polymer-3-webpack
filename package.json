@@ -1,0 +1,16 @@
+{
+  "name": "polymer-3-webpack",
+  "version": "0.1.0",
+  "description": "Test project for Polymer 3 + Webpack",
+  "main": "index.html",
+  "author": "Arturo Martínez <arturo.martinez@wolfchamane.com>",
+  "license": "MIT",
+  "flat": true,
+  "dependencies": {
+    "@polymer/polymer": "next",
+    "@webcomponents/webcomponentsjs": "^1.0.8"
+  },
+  "scripts": {
+    "start": "webpack --config ./webpack.config.js --watch"
+  }
+}
