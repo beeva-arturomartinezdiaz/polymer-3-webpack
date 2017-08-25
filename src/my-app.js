@@ -10,7 +10,7 @@ export class MyApp extends PolymerElement {
   static get template() {
     return `<h1>Welcome [[name]]!</h1>
             <my-element></my-element>
-            <paper-button on-click="_alertName">Which is my name?</paper-button>`;
+            <paper-button on-click="_alertName" raised>Which is my name?</paper-button>`;
   }
 
   static get properties() {
